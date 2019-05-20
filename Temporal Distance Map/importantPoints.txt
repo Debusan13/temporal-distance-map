@@ -1,0 +1,9 @@
+San Francisco,0.5,0.5
+Oakland,0.507584,0.625394
+Hayward,0.414701,0.67108
+Berkeley,0.568628,0.570398
+Richmond,0.645658,0.546607
+Daly City,0.450087,0.481437
+San Mateo,0.39278,0.554246
+San Leandro,0.460153,0.658938
+Redwood City,0.358242,0.582181
