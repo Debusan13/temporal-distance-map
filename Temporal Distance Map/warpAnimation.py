@@ -81,8 +81,9 @@ for frameNumber in [frames]:
 
             data[j, i] = color
 
+     img = smp.toimage( data )  # Create a PIL image
+    
     #labeling important points attempt
-    img = smp.toimage( data )  # Create a PIL image
     if frameNumber == frames:
         txt = Image.new('RGBA', (2055, 2048), (255, 255, 255, 0))
         fnt = ImageFont.truetype(dir_path+'/Roboto/Roboto-Regular.ttf', int(0.01*mapResolution))
@@ -96,6 +97,3 @@ for frameNumber in [frames]:
     images.append(img)
     img.save(dir_path+'/Frames/map'+str(frameNumber)+'.png')
     frameNumber = frameNumber + 1
-
-# images[1].save('C:/Users/lwsc2/Downloads/out3.gif', save_all = True, append_images = images, duration = 1, loop = 0)
-# imageio.mimsave('C:/Users/lwsc2/Downloads/warpAnimationFromFile2.gif', images)
