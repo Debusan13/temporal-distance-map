@@ -14,7 +14,7 @@ ringMinutes = int(sys.argv[2])
 frames = int(sys.argv[3])
 matchScale = sys.argv[4] == "true"
 if sys.argv[5] == "all":
-    framesToRender = range(9, frames+1)
+    framesToRender = range(0, frames+1)
 elif sys.argv[5] == "first":
     framesToRender = [0]
 elif sys.argv[5] == "last":
@@ -75,12 +75,7 @@ for group in groups:
     list_new_dist.append(dist(list_new_x[-1],list_new_y[-1],0.5,0.5))
 
 interpType= 'linear'
-rbf = Rbf(list_new_x,list_new_y,list_old_dist, function = interpType)
-#if len(framesToRender) > 1:
-#    interpFunctionOldDist = memoize(rbf)
-#else:
-interpFunctionOldDist = rbf
-
+interpFunctionOldDist = Rbf(list_new_x,list_new_y,list_old_dist, function = interpType)
 interpFunctionNewDist = Rbf(list_old_x,list_old_y,list_new_dist, function = interpType)
 
 ringDist = oneMinuteDistance*ringMinutes
@@ -96,7 +91,6 @@ for frameNumber in framesToRender:
 
     for i in range(0, mapResolution):
         o = float(i)/mapResolution
-        print(o)
         timeProgress = rowsDone/numRows
         if timeProgress > pTimeProgress+0.0001:
             pTimeProgress = timeProgress
@@ -104,8 +98,8 @@ for frameNumber in framesToRender:
             secsLeft = (curTime-startTime).total_seconds()*(1-timeProgress)/timeProgress
             string = "{0:.2f}".format(timeProgress*100)+"%: Approximately "+"{0:.2f}".format(secsLeft)+" seconds remaining"
             print(string)
-#            with open('time.txt', 'w') as the_file:
-#                the_file.write(string)
+            with open('time.txt', 'w') as the_file:
+                the_file.write(string)
         for j in range(0, mapResolution):
             p = float(j)/mapResolution
             
