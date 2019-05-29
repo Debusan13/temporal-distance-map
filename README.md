@@ -7,6 +7,15 @@ Some map projections preserve distance to create a physical representation of a 
 
 ## Documentation
 
+### Installation
+
+1. Install a Wolfram Language interpreter (Mathematica, Wolfram Desktop, etc.).
+2. Install the latest version of Python (tested on 3.7.2).
+3. Install Python packages: SciPy, NumPy, and Pillow.
+4. Download repository.
+
+### Use
+
 1. Open Temporal Distance Map.nb, and run GenerateWarpMesh.
 2. Export files using code under the section “Export files”.
 3. Run warpAnimation.py under “Warp” in the notebook, or run it in the command line.
