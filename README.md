@@ -16,7 +16,7 @@ Some map projections preserve distance to create a physical representation of a 
 
 ### Use
 
-1. Open Temporal Distance Map.nb, and run GenerateWarpMesh.
+1. Open Temporal Distance Map.nb, and run GenerateWarpMesh. Some examples are provided under "Generate the mesh".
 2. Export files using code under the section “Export files”.
 3. Run warpAnimation.py under “Warp” in the notebook, or run it in the command line.
 4. If making an animation, run makeAnimation.py.
