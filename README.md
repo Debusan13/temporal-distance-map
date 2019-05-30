@@ -5,6 +5,10 @@ Blake Albert, Christian Panici, Nigel Castelino
 
 Some map projections preserve distance to create a physical representation of a given area; however, people are generally more concerned with the time it takes to reach a destination rather than their physical distance to it. Currently, isochrone maps can display travel times, but they are only an overlay over the original map rather than a transformation. We use Python along with travel time data from Wolfram Language to transform a map that preserves distance into one that proportionately displays locations based on the time it takes to travel there from a given point. Our transformed map allows for different analyses on the efficiency of travel in different areas. To the best of our knowledge, this is a unique method of generating a map that gives a possibly more compelling visualization of travel time when compared to isochrone maps.
 
+## Poster
+
+![Poster](https://raw.githubusercontent.com/ncastelino/Temporal-Distance-Map/master/Poster.png)
+
 ## Documentation
 
 ### Installation
