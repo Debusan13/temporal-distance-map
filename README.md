@@ -35,3 +35,8 @@ warpAnimation.py resolution ringMinutes frameCount matchScale frames
   matchScale - determines if the map should be shrinked at the beginning to roughly match its size at the end of the animation
   frames - which frames to generate {“first”, “last”, “all”}
   ```
+### Development
+
+- Change from using Wolfram Language to another map API, converting all code to Python
+- Make map generation faster (multithreading, GPU, ...)
+- Get to run on server to allow arbitrary map generation at large scale
