@@ -163,29 +163,29 @@ for frameNumber in framesToRender:
 
     #Writes important points(we do not have any anymore) onto the image
     #structure is Name, old_x, old_y\n - if ever implemented
-    #img = Image.fromarray(data)
+    img = Image.fromarray(data)
         
-    #txt = Image.new('RGBA', (2055, 2048), (255, 255, 255, 0))
+   # txt = Image.new('RGBA', (2055, 2048), (255, 255, 255, 0))
     #fntSize = max(int(0.02*mapResolution), 10)
     #fnt = ImageFont.truetype(dir_path+'/Roboto/Roboto-Regular.ttf', fntSize)
-    #draw = ImageDraw.Draw(img)
+    draw = ImageDraw.Draw(img)
     #for place in importantPoints:
-        #placeData = place.split(',')
-        #if len(placeData) >= 3:
-            #p = float(placeData[1])
-            #o = float(placeData[2])
-           # oldDist = interpFunctionOldDist(p, o)
-            #normalized = l2norm(p-0.5, o-0.5)
+     #   placeData = place.split(',')
+      #  if len(placeData) >= 3:
+       #     p = float(placeData[1])
+        #    o = float(placeData[2])
+         #   oldDist = interpFunctionOldDist(p, o)
+          #  normalized = l2norm(p-0.5, o-0.5)
            # curDist = dist(p, o, 0.5, 0.5)
-           # mapDist = oldDist*(1-progress)+progress*curDist
+            #mapDist = oldDist*(1-progress)+progress*curDist
            # mapDist = mapDist*(matchMeshScale*(1-progress)+progress)
-           # unwarped_x = normalized[0]*mapDist+0.5
-           # unwarped_y = normalized[1]*mapDist+0.5
-          #  labelX = unwarped_y * mapResolution
-          #  labelY = (1-unwarped_x) * mapResolution
-         #   draw.text((labelX, labelY), str(placeData[0]), font=fnt, fill=(0, 0, 0))
+            #unwarped_x = normalized[0]*mapDist+0.5
+            #unwarped_y = normalized[1]*mapDist+0.5
+            #labelX = unwarped_y * mapResolution
+            #labelY = (1-unwarped_x) * mapResolution
+            #draw.text((labelX, labelY), str(placeData[0]), font=fnt, fill=(0, 0, 0))
    # draw.text((0, mapResolution-fntSize), legendText, font=fnt, fill=(0, 0, 0))
 
-   # img.save(dir_path+'/Frames/map'+str(frameNumber)+'.png')
-   # frameNumber = frameNumber + 1
-   # frameCount = frameCount + 1
+    img.save(dir_path+'/Frames/map'+str(frameNumber)+'.png')
+    frameNumber = frameNumber + 1
+    frameCount = frameCount + 1
