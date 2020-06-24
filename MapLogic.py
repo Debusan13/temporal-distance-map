@@ -11,8 +11,8 @@ import math
 import json
 
 #Gets the image and its bounds
-orig_lat = 33.8998
-orig_long = -97.0403
+orig_lat = 25.7617
+orig_long = -80.1918
 
 KEY = "AqRZj36O-xKG58fcI123-xJGxM76_CuITqN7-hRXqAI2Kbeh2yD_vv1d7U9hMZOD"
 ZOOM = "11"
@@ -70,11 +70,7 @@ for i in mesh:
 ###################################################################################################
 #Calculate Travel Time for every point (minutes)
     
-KEY = "AqRZj36O-xKG58fcI123-xJGxM76_CuITqN7-hRXqAI2Kbeh2yD_vv1d7U9hMZOD"
 URL = "https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?key=" + KEY
-
-#Time chosen by user, in PST
-time = '2020-01-21T13:00:00'
 
 #Coordinates for point with the largest travel time
 maxDistance = np.zeros([7], dtype=float)
@@ -109,6 +105,7 @@ for i in range(0, len(mesh)):
     mesh[i][2] = travelTimes[i]
     if (travelTimes[i] > maxDistance[2]):
         maxDistance = mesh[i]
+
     
 ###################################################################################################
 #Calculation for imPoints
