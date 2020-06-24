@@ -13,12 +13,12 @@ import sys
 mapResolution = int(sys.argv[1])
 ringMinutes = int(sys.argv[2])
 frames = int(sys.argv[3])
-matchScale = sys.argv[4] == "true"
-if sys.argv[5] == "all":
+matchScale = "true"
+if sys.argv[4] == "all":
     framesToRender = range(0, frames+1)
-elif sys.argv[5] == "first":
+elif sys.argv[4] == "first":
     framesToRender = [0]
-elif sys.argv[5] == "last":
+elif sys.argv[4] == "last":
     framesToRender = [frames]
 
 #distance formula
