@@ -1,9 +1,5 @@
 # temporal-distance-map
 
-## Poster
-
-![alt text](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/degoes-consulting/lambdaconf-2015/master/speakers/jdegoes/intro-purescript/presentation.pdf})
-
 ## Web Application
 
 (Link to the github for the web application)[https://github.com/Debusan13/temporal-distance-map-web]
@@ -22,3 +18,6 @@
    4. Run 'MapLogic.py'
    5. Run 'warpAnimation.py'
    6. Run 'makeAnimation.py'
+
+## Poster
+![](https://github.com/Debusan13/temporal-distance-map/blob/master/temporal_distnace_map_poster-1.png)
