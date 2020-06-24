@@ -2,7 +2,7 @@
 
 ## Poster
 
-![](https://github.com/Debusan13/temporal-distance-map/blob/master/temporal_distnace_map_poster.pdf)
+![](https://docs.google.com/viewer?url=${https://github.com/Debusan13/temporal-distance-map/blob/master/temporal_distnace_map_poster.pdf})
 
 ## Web Application
 
