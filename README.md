@@ -2,7 +2,7 @@
 
 ## Poster
 
-![](https://docs.google.com/viewer?url=${https://github.com/Debusan13/temporal-distance-map/blob/master/temporal_distnace_map_poster.pdf})
+![alt text](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/degoes-consulting/lambdaconf-2015/master/speakers/jdegoes/intro-purescript/presentation.pdf})
 
 ## Web Application
 
