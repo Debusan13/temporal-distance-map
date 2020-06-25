@@ -14,7 +14,7 @@ import json
 orig_lat = 25.7617
 orig_long = -80.1918
 
-KEY = "AqRZj36O-xKG58fcI123-xJGxM76_CuITqN7-hRXqAI2Kbeh2yD_vv1d7U9hMZOD"
+KEY = ##insert your key here##
 ZOOM = "11"
 URL = "https://dev.virtualearth.net/REST/V1/Imagery/Map/Road/" + str(orig_lat) + "%2C" + str(orig_long) + "/" + ZOOM + "?mapSize=2048,2048&dpi=Large&format=png&key=" + KEY
 
