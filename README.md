@@ -8,7 +8,16 @@
 
 #### 1. Setting up the environment
    1. Install [Mini Conda](https://docs.conda.io/en/latest/miniconda.html)
-   2. Create a new environment and install the following packages
+   2. Create a new environment and install the following packages and their dependencies
+      * Scipy
+      * NumPy
+      * Pillow
+      * Requests
+      * JSON
+      * imageio
+      * skimage
+      
+      
    3. Activate the environment
 
 #### 2. Running the code
