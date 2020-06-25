@@ -7,8 +7,9 @@ Link to the repository for the [web application](https://github.com/Debusan13/te
 ## Installation Guide
 
 #### 1. Setting up the environment
-   1. Install [Mini Conda](https://docs.conda.io/en/latest/miniconda.html)
-   2. Create a new environment and install the following packages and their dependencies
+   1. Clone the repository
+   2. Install [Mini Conda](https://docs.conda.io/en/latest/miniconda.html)
+   3. Create a new environment and install the following packages and their dependencies
       * Scipy
       * NumPy
       * Pillow
@@ -17,17 +18,15 @@ Link to the repository for the [web application](https://github.com/Debusan13/te
       * imageio
       * skimage
       
-      
-   3. Activate the environment
+   4. Activate the environment
 
 #### 2. Running the code
-   1. Clone the repository
-   2. Go to <https://www.bingmapsportal.com/> and create an API key
-   3. In [MapLogic.py](https://github.com/Debusan13/temporal-distance-map/blob/master/MapLogic.py), change the variable KEY to your API key in type string
-   4. Change the 'orig_lat' and 'orig_long' variables to the latitude and longitude of the location you want to transform
-   5. Run 'MapLogic.py'
-   6. Run 'warpAnimation.py'
-   7. Run 'makeAnimation.py'
+   1. Go to <https://www.bingmapsportal.com/> and create an API key
+   2. In [MapLogic.py](https://github.com/Debusan13/temporal-distance-map/blob/master/MapLogic.py), change the variable KEY to your API key in type string
+   3. Change the 'orig_lat' and 'orig_long' variables to the latitude and longitude of the location you want to transform
+   4. Run 'MapLogic.py'
+   5. Run 'warpAnimation.py'
+   6. Run 'makeAnimation.py'
 
 ## Poster
 ![](https://github.com/Debusan13/temporal-distance-map/blob/master/temporal_distnace_map_poster-1.png)
