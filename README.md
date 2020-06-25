@@ -2,7 +2,7 @@
 
 ## Web Application
 
-(Link to the github for the web application)[https://github.com/Debusan13/temporal-distance-map-web]
+Link to the github for the (web application)[https://github.com/Debusan13/temporal-distance-map-web]
 
 ## Installation Guide
 
